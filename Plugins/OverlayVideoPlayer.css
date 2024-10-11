@@ -1,0 +1,24 @@
+#overlay-video-container {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 0;
+
+    display: none;
+}
+
+#overlay-video-player {
+    background-color: #F0F0F0;
+
+    width: 100%;
+}
+
+#close-button {
+    position: absolute;
+    top: -64px;
+
+    background-image: url(CloseButton.png);
+    width: 64px;
+    height: 64px;
+    background-size: contain;
+}

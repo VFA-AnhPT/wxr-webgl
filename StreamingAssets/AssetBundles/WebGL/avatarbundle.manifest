@@ -1,0 +1,91 @@
+ManifestFileVersion: 0
+CRC: 3739357853
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 951a74d5ee6f27887b60def8ebd9a2f8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bbfeb4aa2e86b9d7deeb2ec560f6f2a1
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 646b65a4a57afd34d8c4ed557efb46a5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f5cda3838b12dde499593cc172e24472, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5b678c1df50cfb547990db24a32856da, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3ad056da6288a7342986a4889969de1f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 63b589176a34b344b9ccbee2b7e7114a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 47f7481e27bf9274d8145a58460c1f8a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 74000630780e86e4685e0f0703eb617e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: dedba1309bdf12b42af2362f52eea134, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5da116d6310a0e04c9840df0a2679822, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3869812175467a143ab9cd865752b4a9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 976e99d37c093ce4c9b249c81c2cbdd5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0601d86331c00f74e89031ece6279ebe, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 690ea0146224b8b4694a1925dddeb352, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 329dca3bf78fcdd42b2df941673db76f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7b4160f88b7c58c419460d27b679674b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e0a1a470564f16f4f94acb4b9ef56367, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 00ea06e1753e16f4ca870c39c067c86b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9abd68571fa2ee84d8989b715bec48a5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a8b72334adf6f7948bd98b4f0a873949, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UniHumanoid
+  ClassName: UniHumanoid.BoneLimit
+- AssemblyName: VRM
+  ClassName: VRM.BlendShapeBinding
+- AssemblyName: VRM
+  ClassName: VRM.CurveMapper
+- AssemblyName: VRM
+  ClassName: VRM.OffsetOnTransform
+- AssemblyName: VRM
+  ClassName: VRM.VRMFirstPerson/RendererFirstPersonFlags
+- AssemblyName: VRM
+  ClassName: VRM.VRMSpringBoneColliderGroup/SphereCollider
+Assets:
+- Assets/_Visualize/07_Prefabs/ForTest/TestAvatar.prefab
+Dependencies: []

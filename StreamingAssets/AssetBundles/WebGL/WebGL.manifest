@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 3561921669
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: avatarbundle
+      Dependencies: {}
