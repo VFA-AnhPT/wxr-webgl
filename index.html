@@ -43,11 +43,12 @@
       });
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WXR-101001-ChatAI-01-N105.loader.js";
+      var loaderUrl = buildUrl + "/WXR_101001_ChatAI_01_N105.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WXR-101001-ChatAI-01-N105.data",
-        frameworkUrl: buildUrl + "/WXR-101001-ChatAI-01-N105.framework.js",
-        codeUrl: buildUrl + "/WXR-101001-ChatAI-01-N105.wasm",
+        dataUrl: buildUrl + "/WXR_101001_ChatAI_01_N105.data.unityweb",
+        frameworkUrl: buildUrl + "/WXR_101001_ChatAI_01_N105.framework.js.unityweb",
+        codeUrl: buildUrl + "/WXR_101001_ChatAI_01_N105.wasm.unityweb",
+        symbolsUrl: buildUrl + "/WXR_101001_ChatAI_01_N105.symbols.json.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "ViSUALIZE",
         productName: "WXR_101001_ChatAI_01_N105",
@@ -74,7 +75,7 @@
           if (fullscreenButton)
           {
             fullscreenButton.onclick = () => {
-              unityInstance.SetFullscreen(1);
+              document.makeFullscreen('unity-container');
             };
           }
         }).catch((message) => {
@@ -90,6 +91,6 @@
 
   <!-- jitsi -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
-  <script src="https://meet.jit.si/libs/lib-jitsi-meet.min.js"></script> 
-  <script src="Jitsi/auto-start.js"></script> 
+  <!-- <script src="https://meet.jit.si/libs/lib-jitsi-meet.min.js"></script> 
+  <script src="Jitsi/auto-start.js"></script>  -->
 </html>
