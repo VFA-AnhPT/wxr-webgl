@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>WXR Visualize</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>WXR ViSUALIZE</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <link rel="stylesheet" href="TemplateData/style.css" />
 
-    <link rel="stylesheet" href="Plugins/OverlayVideoPlayer.css">
+    <link rel="stylesheet" href="Plugins/OverlayVideoPlayer.css" />
   </head>
   <body>
     <div id="unity-container">
       <div id="fader">
         <div id="logo"></div>
       </div>
-      <canvas id="unity-canvas" style="width: 100%; height: 100%;"></canvas>
+      <canvas id="unity-canvas" style="width: 100%; height: 100%"></canvas>
 
       <div id="overlay-video-container">
         <div id="close-button" onclick="OverlayVideoPlayer.stop();"></div>
@@ -43,12 +43,12 @@
       });
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WXR_101001_ChatAI_01_N105.loader.js";
+      var loaderUrl = buildUrl + "/build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WXR_101001_ChatAI_01_N105.data.unityweb",
-        frameworkUrl: buildUrl + "/WXR_101001_ChatAI_01_N105.framework.js.unityweb",
-        codeUrl: buildUrl + "/WXR_101001_ChatAI_01_N105.wasm.unityweb",
-        symbolsUrl: buildUrl + "/WXR_101001_ChatAI_01_N105.symbols.json.unityweb",
+        dataUrl: buildUrl + "/build.data.unityweb",
+        frameworkUrl: buildUrl + "/build.framework.js.unityweb",
+        codeUrl: buildUrl + "/build.wasm.unityweb",
+        symbolsUrl: buildUrl + "/build.symbols.json.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "ViSUALIZE",
         productName: "WXR_101001_ChatAI_01_N105",
@@ -61,43 +61,42 @@
       var fader = document.querySelector("#fader");
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var unityInstance = null;
-      
 
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
-        createUnityInstance(canvas, config).then((instance) => {
-          unityInstance = instance;
+        createUnityInstance(canvas, config)
+          .then((instance) => {
+            unityInstance = instance;
 
-          fader.classList.remove("fade-in");
-          fader.classList.add("fade-out");
+            fader.classList.remove("fade-in");
+            fader.classList.add("fade-out");
 
-          if (fullscreenButton)
-          {
-            fullscreenButton.onclick = () => {
-              document.makeFullscreen('unity-container');
-            };
-          }
-        }).catch((message) => {
-          alert(message);
-        });
+            if (fullscreenButton) {
+              fullscreenButton.onclick = () => {
+                document.makeFullscreen("unity-container");
+              };
+            }
+          })
+          .catch((message) => {
+            alert(message);
+          });
       };
       document.body.appendChild(script);
     </script>
 
     <!-- jitsi -->
-    <div id="participant-audio-streams"></div> 
+    <div id="participant-audio-streams"></div>
   </body>
 
   <!-- jitsi -->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
-  <!-- <script src="https://meet.jit.si/libs/lib-jitsi-meet.min.js"></script> 
-  <script src="Jitsi/auto-start.js"></script>  -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- <script src="https://meet.jit.si/libs/lib-jitsi-meet.min.js"></script>  -->
+  <!-- <script src="Jitsi/auto-start.js"></script>  -->
   <script>
-  // for avoid error by calling from Unity
-  function setMute(isMute)
-  {
-    console.log("setMute: " + isMute);
-  }
+    // for avoid error by calling from Unity
+    function setMute(isMute) {
+      console.log("setMute: " + isMute);
+    }
   </script>
 </html>

@@ -125,7 +125,6 @@ function changeMuteStatus() {
 
 function setMute(isMute)
 {
-    if (!localTracks) return;
     for (let i = 0; i < localTracks.length; i++) {
         if (localTracks[i].getType() === 'audio') {
             if (isMute) {
